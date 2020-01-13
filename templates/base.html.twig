@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        <form method="get" action="{{ path('bot_fetch_links') }}">
+            Generate Item Links
+            <input type="text" name="link" placeholder="http://128.199.43.236/search?searchstr=">
+            <button type="submit">Generate</button>
+        </form>
+
+        <form method="get" action="{{ path('bot_fetch_item') }}">
+            Generate Item Data
+            <input type="text" name="link" placeholder="http://128.199.43.236/single/2-burak-emlaktan-acil-satlik-.html">
+            <button type="submit">Generate</button>
+        </form>
+    </body>
+</html>
