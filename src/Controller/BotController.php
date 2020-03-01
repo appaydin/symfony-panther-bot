@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Class BotController
  *
- * @author Kerem ENDER <apaydin541@gmail.com>
+ * @author Ramazan APAYDIN <apaydin541@gmail.com>
  */
 class BotController extends AbstractController
 {
